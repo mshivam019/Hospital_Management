@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<style th:inline="text">
+body{
+	background-image: url('https://www.healthpartners.com/content/dam/brand-identity/photography/facility/hospital/regions/web/dji-0021-edit-2000x888.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container{
+	text-align: center;
+     max-width: 500px;
+  
+  margin: 200px auto;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 style="color:rgb(255, 255, 255);font-size:100px;">WELCOME</h1>
+<br>
+<br>
+ <p><a th:href="@{/login}"  class="btn btn-primary" >LOGIN</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<style>
+body{
+	background-image: url('https://www.desunhospital.com/blog/wp-content/uploads/2015/09/doctor-banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container{
+  max-width: 600px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1 style ="color: #17a2b8; font-size: 50px;">UPDATE PATIENT</h1>
+		<hr style ="color: white;" >
+		
+		<h2 style="font-size: 30px; margin-left : 8vw; color: rgb(0, 0, 0);">ENTER THE DETAILS</h2>
+
+		<form style=" width: 50vw; margin-left : 9vw;" action="#" th:action="@{/savePatient}" th:object="${doctor}"
+			method="POST">
+			
+			<input type="hidden" th:field="*{patientId}"
+				placeholder="Patient ID" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{pName}"
+				placeholder="Patient Name" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{phno}"
+				placeholder="Phone number" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{email}"
+				placeholder="Email" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{status}" 
+				placeholder="Status"class="form-control mb-4 col-4">
+				<button style ="margin-left : 4vw;" type="submit" class="btn btn-info col-2"> Update</button>
+		</form>
+		<hr>
+		<a th:href = "@{/dpatient}" style ="color: white; font-size: 25px;"> Back to Patients List</a>
+	</div>
+</body>
+</html>

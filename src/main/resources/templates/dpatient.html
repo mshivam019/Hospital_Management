@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="ISO-8859-1">
+<title>Patients</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<style>
+table, th, td {
+  border: 1px solid #96D4D4;
+  border-collapse: collapse;
+  font-size:large;
+}
+th {
+  background-color: #96D4D4;
+}
+body{
+background-image: url('http://adwallpapers.xyz/uploads/posts/1326-hospital-interior-corridor-blurred-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>	
+</head>
+<body>
+     <div class="container my-2">
+	<h1>Patients List</h1>
+	<a th:href = "@{/login}" class="btn btn-danger btn-sm mb-3"> Log Out </a>
+	<a th:href = "@{/showNewPatientForm}" class="btn btn-primary btn-sm mb-3"> Add Patient </a>
+	
+		<table border="1" class = "table table-striped table-responsive-md">
+			<thead>
+				<tr>
+					<th>
+						<a>ID</a>
+					</th>
+					<th>
+					    <a>Name</a>
+					</th>
+					<th>
+					     <a>Phone Number</a>
+					</th>
+					<th>
+					     <a>Email</a>
+					</th>
+					<th>
+					     <a>Status</a>
+					</th>
+					<th> Actions </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="dpatient : ${listDoctor}">
+					<td th:text="${dpatient.patient_id}"></td>
+					<td th:text="${dpatient.p_name}"></td>
+					<td th:text="${dpatient.phno}"></td>
+					<td th:text="${dpatient.email}"></td>
+					<td th:text="${dpatient.status}">
+					</td>
+					<td> <a th:href="@{showFormForUpdate/{id}(id=${dpatient.patient_id})}" class="btn btn-primary">Update</a>
+					    <a th:href="@{deletePatient/{id}(id=${dpatient.patient_id})}" class="btn btn-danger">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>		
+	</div>
+</body>
+</html>

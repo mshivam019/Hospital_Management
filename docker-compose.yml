@@ -18,7 +18,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@admin.de
       PGADMIN_DEFAULT_PASSWORD: password
     ports:
-      - "5050:80"
+      - "7825:80"
 ### API Spring Boot ###
   api:
     build:
@@ -31,4 +31,4 @@ services:
       DATABASE_USER: user
       DATABASE_PASSWORD: password
     ports:
-      - "8080:3100"
+      - "3521:3100"

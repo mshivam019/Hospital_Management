@@ -1,11 +1,4 @@
-# Multi Stage build
-
-# Base Image and name stage as "builder"
-FROM maven:3-openjdk-15 AS builder
-
-#mvn -f pom.xml clean package  -DskipTests
-
-FROM openjdk:15.0.1
+FROM openjdk:17-jdk-slim
 
 WORKDIR /Hospital_Management-main/lib/
 

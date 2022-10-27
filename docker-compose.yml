@@ -2,7 +2,7 @@ version: "3.8"
 services:
 ### Postgres Database ###
   postgres:
-    image: postgres:10.4
+    image: postgres:15
     ports:
       - "35000:5432"
     environment: 

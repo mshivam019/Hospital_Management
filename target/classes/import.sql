@@ -1,1 +1,1 @@
-INSERT INTO login (userid, password, username) VALUES (1, 'password1', 'doctor@hmd'),(2, 'password2', 'patient@hmp');
+INSERT INTO login (password, username) VALUES ( 'password1', 'doctor@hmd'),('password2', 'patient@hmp');

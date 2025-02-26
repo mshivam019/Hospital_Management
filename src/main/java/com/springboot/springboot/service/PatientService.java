@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.springboot.springboot.entities.Patient;
-//import com.springboot.springboot.entities.Doctor;
 import com.springboot.springboot.repository.Patientrepo;
 
 
@@ -24,10 +23,7 @@ public class PatientService {
 
 	public Patient getAppointment(int id) {
 		// TODO Auto-generated method stub
-		
-		Patient d= patientrepo.findById(id).get();
-		
-		return d;
+		return patientrepo.findById(id).get();
 	}
 
 

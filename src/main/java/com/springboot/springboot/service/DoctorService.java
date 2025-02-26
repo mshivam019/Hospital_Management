@@ -6,11 +6,6 @@ import org.springframework.stereotype.Service;
 import com.springboot.springboot.entities.Doctor;
 import com.springboot.springboot.repository.DoctorRepo;
 
-/*import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;*/
-
 @Service
 public class DoctorService{
 

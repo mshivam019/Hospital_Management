@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @SuppressWarnings("unused")
 @Controller
-public class ErrorController implements org.springframework.boot.web.servlet.error.ErrorController {
+public class CustomErrorController implements org.springframework.boot.web.servlet.error.ErrorController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 

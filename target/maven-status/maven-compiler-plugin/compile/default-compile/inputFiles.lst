@@ -1,6 +1,6 @@
 C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\repository\DoctorRepo.java
 C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\controller\CallbackController.java
-C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\controller\ErrorController.java
+C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\controller\CustomErrorController.java
 C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\entities\Doctor.java
 C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\service\PatientService.java
 C:\Users\mshiv\Downloads\Projects\Hospital_Management\src\main\java\com\springboot\springboot\controller\HomeController.java
